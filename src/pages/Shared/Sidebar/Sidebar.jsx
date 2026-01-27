@@ -8,7 +8,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { TbLogout } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, closeSidebar }) => {
 
 
     const NavigationOptions = [
@@ -19,7 +19,18 @@ const Sidebar = () => {
     ];
 
     return (
-        <div className=" min-h-screen bg-primary text-white border-r border-gray-700">
+        <>
+        {/* Mobile overlay */}
+        {isOpen && (
+            <div 
+                className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+                onClick={closeSidebar}
+            />
+        )}
+        
+        <div className={`fixed lg:static min-h-screen bg-primary text-white border-r border-gray-700 z-50 transition-transform duration-300 lg:translate-x-0 ${
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
             <div className="p-1">
                 {/* Logo */}
                 <div className="flex items-center mx-auto justify-center mt-4 mb-8">
@@ -75,6 +86,7 @@ const Sidebar = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
