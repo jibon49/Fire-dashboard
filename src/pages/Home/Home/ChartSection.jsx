@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import ChoiceButton from '../../Shared/ChoiceButton/ChoiceButton';
 
 const ChartSection = () => {
 
@@ -62,14 +63,8 @@ const ChartSection = () => {
                     <h1 className='text-xl'>Call Trends- This Week</h1>
                     <p className='text-sm'>Total:472 calls</p>
                 </div>
-                <div className="dropdown dropdown-bottom dropdown-end">
-                    <div tabIndex={0} role="button" className="btn m-1 bg-site-secondary rounded-xl w-36 text-white">This {activeOption} <MdOutlineArrowDropDown /></div>
-                    <ul tabIndex="-1" className="dropdown-content menu bg-site-secondary rounded-box z-1 w-52 p-2 border-2 hover:shadow-lg ">
-                        {filterOptions.map((option) => (
-                            <li className='hover:bg-white hover:text-site-secondary ' key={option.value}><button onClick={() => handleOption(option.value)}>{option.label}</button></li>
-                        ))}
-                    </ul>
-                </div>
+                {/* Choice Button */}
+                <ChoiceButton options={filterOptions} selectedOption={activeOption} onSelect={handleOption} />
             </div>
             <div style={{ width: '100%', height: 300 }}>
                 <ResponsiveContainer>

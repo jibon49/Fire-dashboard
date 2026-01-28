@@ -1,8 +1,11 @@
 import React from 'react'
+import SearchAndFilter from './SearchAndFilter'
 
 const CallLogs = () => {
   return (
-    <div>CallLogs</div>
+    <div>
+      <SearchAndFilter></SearchAndFilter>
+    </div>
   )
 }
 

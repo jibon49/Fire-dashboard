@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             <div className="p-1">
                 
                 <div className="flex items-center mx-auto justify-center mt-4 mb-8">
-                    <div className="w-14 h-14 bg-gradient-to-b from-[#00FF88] to-[#00D4FF] rounded-lg flex items-center justify-center">
+                    <div className="w-14 h-14 bg-linear-to-b from-[#00FF88] to-[#00D4FF] rounded-lg flex items-center justify-center">
                         <HiOutlineLightningBolt className="text-3xl text-black font-bold" />
                     </div>
                 </div>
