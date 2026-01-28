@@ -57,7 +57,7 @@ const ChartSection = () => {
 
 
     return (
-        <div className='border rounded-2xl bg-bg-component h-[106.5] p-5 border-gray-500 mb-10'>
+        <div className='border rounded-2xl bg-bg-component h-106.5 p-5 border-gray-500 mb-10'>
             <div className="flex justify-between items-center mb-4 mx-8">
                 <div>
                     <h1 className='text-xl'>Call Trends- This Week</h1>
