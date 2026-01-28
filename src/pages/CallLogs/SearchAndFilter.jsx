@@ -3,9 +3,9 @@ import ChoiceButton from "../Shared/ChoiceButton/ChoiceButton";
 
 const SearchAndFilter = () => {
 
-    const filterType = ["All Type", "Technical", "Billing", "General Inquiries"];
+    const filterType = ["All Type", "All Resolved", "Warm Transfer", "Appointment", "Dropped"];
 
-    const filterIssues = ["All Issues", "Login Issues", "Payment Issues", "Account Management", "Service Outages"];
+    const filterIssues = ["All Issues", "Screen", "Battery", "Software", "Unknown"];
 
     const filterDays = ["Today", "Last 7 Days", "Last 30 Days", "Last 90 Days"];
 
@@ -22,7 +22,7 @@ const SearchAndFilter = () => {
     return (
         <div className="flex flex-col lg:flex-row gap-4 lg:justify-between">
             <div className="w-full lg:w-1/2">
-                <label className="input text-[#62748E] bg-bg-component rounded-lg flex items-center gap-2 px-3 py-2 w-full h-12 border border-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <label className="input text-[#62748E] bg-bg-component rounded-lg flex items-center gap-2 px-3 py-2 w-full h-12 border border-border-color focus:outline-none focus:ring-1 focus:ring-blue-500">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
                             strokeLinejoin="round"
