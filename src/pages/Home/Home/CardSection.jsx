@@ -24,7 +24,7 @@ const CardSection = () => {
                 <div key={index} className="bg-[#111B39] rounded-lg shadow p-4 flex justify-between space-x-4">
                     
                     <div>
-                        <h3 className="text-lg font-semibold">{card.title}</h3>
+                        <h3 className="text-sm text-text-primary">{card.title}</h3>
                         <p className="text-2xl">{card.value}</p>
                         <p className={`text-sm ${card.trend.startsWith('+') ? 'text-green-500' : 'text-red-500'}`}>{card.trend}</p>
                     </div>

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "clientName": "John.S",
+    "clientPhone": "01712345678",
+    "clientEmail": "john.doe@gmail.com",
+    "device": "Samsung/Galaxy S23 Ultra",
+    "repairType": "Battery",
+    "date": "03/06/2026",
+    "slotNo": 2,
+    "startTime": "10:00"
+  },
+  {
+    "id": 2,
+    "clientName": "Mike.W",
+    "clientPhone": "01876543210",
+    "clientEmail": "mike.wilson@yahoo.com",
+    "device": "Google/Pixel 7 Pro",
+    "repairType": "Camera",
+    "date": "04/06/2026",
+    "slotNo": 3,
+    "startTime": "11:30"
+  },
+  {
+    "id": 3,
+    "clientName": "Sarah.K",
+    "clientPhone": "01698765432",
+    "clientEmail": "sarah.k@gmail.com",
+    "device": "Apple/Iphone 15",
+    "repairType": "Screen",
+    "date": "05/06/2026",
+    "slotNo": 1,
+    "startTime": "09:00"
+  },
+  {
+    "id": 4,
+    "clientName": "David.L",
+    "clientPhone": "01911223344",
+    "clientEmail": "david.lee@outlook.com",
+    "device": "OnePlus/11 Pro",
+    "repairType": "Charging Port",
+    "date": "02/06/2026",
+    "slotNo": 4,
+    "startTime": "14:00"
+  },
+  {
+    "id": 5,
+    "clientName": "Emily.C",
+    "clientPhone": "01555666777",
+    "clientEmail": "emily.chen@hotmail.com",
+    "device": "Apple/Iphone 14 Pro Max",
+    "repairType": "Back Glass",
+    "date": "03/06/2026",
+    "slotNo": 5,
+    "startTime": "15:30"
+  },
+  {
+    "id": 6,
+    "clientName": "Jane.D",
+    "clientPhone": "01960685765",
+    "clientEmail": "admin@gmail.com",
+    "device": "Apple/Iphone 13pro",
+    "repairType": "Screen",
+    "date": "02/06/2026",
+    "slotNo": 1,
+    "startTime": "03:00"
+  },
+  {
+    "id": 7,
+    "clientName": "Robert.T",
+    "clientPhone": "01777888999",
+    "clientEmail": "robert.taylor@gmail.com",
+    "device": "Samsung/Galaxy Z Fold 5",
+    "repairType": "Hinge",
+    "date": "06/06/2026",
+    "slotNo": 2,
+    "startTime": "10:30"
+  },
+  {
+    "id": 8,
+    "clientName": "Lisa.M",
+    "clientPhone": "01899887766",
+    "clientEmail": "lisa.m@gmail.com",
+    "device": "Apple/Iphone 12",
+    "repairType": "Battery",
+    "date": "04/06/2026",
+    "slotNo": 3,
+    "startTime": "13:00"
+  },
+  {
+    "id": 9,
+    "clientName": "James.B",
+    "clientPhone": "01655443322",
+    "clientEmail": "james.brown@yahoo.com",
+    "device": "Xiaomi/13 Pro",
+    "repairType": "Screen",
+    "date": "07/06/2026",
+    "slotNo": 1,
+    "startTime": "09:30"
+  },
+  {
+    "id": 10,
+    "clientName": "Amanda.R",
+    "clientPhone": "01933445566",
+    "clientEmail": "amanda.rodriguez@gmail.com",
+    "device": "Apple/Iphone 15 Pro",
+    "repairType": "Water Damage",
+    "date": "05/06/2026",
+    "slotNo": 4,
+    "startTime": "16:00"
+  },
+  {
+    "id": 11,
+    "clientName": "Thomas.G",
+    "clientPhone": "01766778899",
+    "clientEmail": "thomas.garcia@outlook.com",
+    "device": "Samsung/Galaxy A54",
+    "repairType": "Charging Port",
+    "date": "08/06/2026",
+    "slotNo": 5,
+    "startTime": "11:00"
+  },
+  {
+    "id": 12,
+    "clientName": "Sophia.H",
+    "clientPhone": "01522334455",
+    "clientEmail": "sophia.harris@gmail.com",
+    "device": "Apple/Iphone 13",
+    "repairType": "Camera",
+    "date": "06/06/2026",
+    "slotNo": 2,
+    "startTime": "14:30"
+  },
+  {
+    "id": 13,
+    "clientName": "William.C",
+    "clientPhone": "01877665544",
+    "clientEmail": "william.clark@hotmail.com",
+    "device": "Google/Pixel 8",
+    "repairType": "Screen",
+    "date": "09/06/2026",
+    "slotNo": 3,
+    "startTime": "10:00"
+  },
+  {
+    "id": 14,
+    "clientName": "Olivia.M",
+    "clientPhone": "01688776655",
+    "clientEmail": "olivia.martin@gmail.com",
+    "device": "Apple/Iphone 14",
+    "repairType": "Battery",
+    "date": "07/06/2026",
+    "slotNo": 4,
+    "startTime": "12:30"
+  },
+  {
+    "id": 15,
+    "clientName": "Daniel.W",
+    "clientPhone": "01944556677",
+    "clientEmail": "daniel.wilson@yahoo.com",
+    "device": "OnePlus/Nord 3",
+    "repairType": "Screen",
+    "date": "10/06/2026",
+    "slotNo": 1,
+    "startTime": "09:00"
+  },
+  {
+    "id": 16,
+    "clientName": "Emma.L",
+    "clientPhone": "01755443322",
+    "clientEmail": "emma.lewis@gmail.com",
+    "device": "Apple/Iphone 11",
+    "repairType": "Back Glass",
+    "date": "08/06/2026",
+    "slotNo": 5,
+    "startTime": "15:00"
+  },
+  {
+    "id": 17,
+    "clientName": "Michael.K",
+    "clientPhone": "01822334455",
+    "clientEmail": "michael.king@outlook.com",
+    "device": "Samsung/Galaxy S22",
+    "repairType": "Charging Port",
+    "date": "11/06/2026",
+    "slotNo": 2,
+    "startTime": "11:30"
+  },
+  {
+    "id": 18,
+    "clientName": "Ava.S",
+    "clientPhone": "01633445566",
+    "clientEmail": "ava.scott@gmail.com",
+    "device": "Apple/Iphone 13 Mini",
+    "repairType": "Screen",
+    "date": "09/06/2026",
+    "slotNo": 3,
+    "startTime": "13:30"
+  },
+  {
+    "id": 19,
+    "clientName": "Christopher.N",
+    "clientPhone": "01966778899",
+    "clientEmail": "chris.nelson@hotmail.com",
+    "device": "Google/Pixel 7a",
+    "repairType": "Battery",
+    "date": "12/06/2026",
+    "slotNo": 4,
+    "startTime": "10:00"
+  },
+  {
+    "id": 20,
+    "clientName": "Mia.P",
+    "clientPhone": "01788990011",
+    "clientEmail": "mia.parker@gmail.com",
+    "device": "Apple/Iphone 15 Plus",
+    "repairType": "Camera",
+    "date": "10/06/2026",
+    "slotNo": 5,
+    "startTime": "16:30"
+  }
+]

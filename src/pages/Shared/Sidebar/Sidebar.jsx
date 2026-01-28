@@ -76,7 +76,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 
 
 
-                {/* Logout */}
+                
                 <div className="absolute bottom-4 left-4">
                     <button className="group flex items-center gap-3 p-3 text-black rounded-full
             hover:border hover:border-black transition-all duration-200">

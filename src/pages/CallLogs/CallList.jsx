@@ -1,7 +1,7 @@
 import { IoCallOutline } from "react-icons/io5";
 import { IoTimeOutline } from "react-icons/io5";
 import { LuCircleCheckBig } from "react-icons/lu";
-
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 
 
@@ -39,7 +39,8 @@ const CallList = ({ callListData, statusColors, selectedCall, onSelectCall }) =>
                             <span className="ml-1 text-text-primary">{call.duration}</span>
                         </p>
                         <p className=" text-sm text-text-primary">
-                            <LuCircleCheckBig className="inline-block mb-1" /> <span className="ml-1">{call.action}</span>
+                                {call.status !== "Dropped" ?<LuCircleCheckBig className="inline-block mb-1" /> : <IoAlertCircleOutline className="inline-block mb-1" /> } <span className="ml-1">{call.action}</span>
+                            
                         </p>
                         <p className="bg-[#2B7FFF33] px-3 rounded-lg text-[#51A2FF] ml-2">{call.type}</p>
                     </div>
