@@ -6,6 +6,10 @@ import CallDetails from './CallDetails'
 const CallLogs = () => {
 
   const [selectedCall, setSelectedCall] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedType, setSelectedType] = useState("All Type");
+  const [selectedIssue, setSelectedIssue] = useState("All Issues");
+  const [selectedDays, setSelectedDays] = useState("Today");
 
   const callListData = [
     {
@@ -120,12 +124,37 @@ const CallLogs = () => {
   }
 
 
+  const filteredCallListData = callListData.filter((call) => {
+
+    const matchesSearch = searchTerm === "" || 
+      call.caller.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      call.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      call.action.toLowerCase().includes(searchTerm.toLowerCase());
+
+
+    const matchesType = selectedType === "All Type" || call.status === selectedType;
+
+
+    const matchesIssue = selectedIssue === "All Issues" || call.type === selectedIssue;
+
+    return matchesSearch && matchesType && matchesIssue;
+  });
+
   return (
     <div>
-      <SearchAndFilter></SearchAndFilter>
+      <SearchAndFilter
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
+        selectedIssue={selectedIssue}
+        setSelectedIssue={setSelectedIssue}
+        selectedDays={selectedDays}
+        setSelectedDays={setSelectedDays}
+      />
       <div className="flex flex-col lg:flex-row gap-5 mt-5">
         <CallList 
-          callListData={callListData} 
+          callListData={filteredCallListData} 
           statusColors={statusColors}
           selectedCall={selectedCall}
           onSelectCall={setSelectedCall}

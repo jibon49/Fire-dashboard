@@ -1,22 +1,12 @@
-import { useState } from "react";
 import ChoiceButton from "../Shared/ChoiceButton/ChoiceButton";
 
-const SearchAndFilter = () => {
+const SearchAndFilter = ({ searchTerm, setSearchTerm, selectedType, setSelectedType, selectedIssue, setSelectedIssue, selectedDays, setSelectedDays }) => {
 
-    const filterType = ["All Type", "All Resolved", "Warm Transfer", "Appointment", "Dropped"];
+    const filterType = ["All Type", "AI Resolved", "Warm Transfer", "Appointment", "Dropped"];
 
     const filterIssues = ["All Issues", "Screen", "Battery", "Software", "Unknown"];
 
     const filterDays = ["Today", "Last 7 Days", "Last 30 Days", "Last 90 Days"];
-
-    const handleSearch = (e) => {
-        e.preventDefault();
-    }
-
-    const [searchTerm, setSearchTerm] = useState("");
-    const [selectedType, setSelectedType] = useState("All Type");
-    const [selectedIssue, setSelectedIssue] = useState("All Issues");
-    const [selectedDays, setSelectedDays] = useState("Today");
 
 
     return (
