@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <CardSection></CardSection>
       <ChartSection></ChartSection>
-      <div className='flex justify-between gap-6 flex-col lg:flex-row gap-5'>
+      <div className='flex justify-between gap-6 flex-col lg:flex-row'>
         <RecentActivity></RecentActivity>
         <TopRepairRequest></TopRepairRequest>
       </div>

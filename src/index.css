@@ -60,3 +60,11 @@
 .status-error {
   background-color: #ef4444; 
 }
+
+.progress-info::-webkit-progress-value {
+  background: linear-gradient(to right, #2B7FFF, #00B8DB);
+}
+
+.progress-info::-moz-progress-bar {
+  background: linear-gradient(to right, #2B7FFF, #00B8DB);
+}
