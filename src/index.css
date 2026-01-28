@@ -3,8 +3,60 @@
 
 @theme {
   --color-primary: #111b3c;
+  --color-site-secondary: #152353;
+  --color-bg-component: #111B39;
 }
 
 :root {
   --default-color: #111B3C;
+}
+
+/* Status indicator styles */
+.status {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: #9ca3af;
+}
+
+.status-xs {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.status-sm {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.status-md {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.status-lg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.status-xl {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.status-success {
+  background-color: #22c55e; 
+}
+
+.status-warning {
+  background-color: #f59e0b; 
+}
+
+.status-accent {
+  background-color: #3b82f6; 
+}
+
+.status-error {
+  background-color: #ef4444; 
 }

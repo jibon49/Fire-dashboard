@@ -19,9 +19,9 @@ const CardSection = () => {
 
   return (
     <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 mb-10">
             {cards.map((card, index) => (
-                <div key={index} className="bg-primary rounded-lg shadow p-4 flex justify-between space-x-4">
+                <div key={index} className="bg-[#111B39] rounded-lg shadow p-4 flex justify-between space-x-4">
                     
                     <div>
                         <h3 className="text-lg font-semibold">{card.title}</h3>
