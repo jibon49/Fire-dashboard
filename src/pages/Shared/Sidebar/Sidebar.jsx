@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 
     return (
         <>
-        {/* Mobile overlay */}
+       
         {isOpen && (
             <div 
                 className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
@@ -32,14 +32,14 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
             <div className="p-1">
-                {/* Logo */}
+                
                 <div className="flex items-center mx-auto justify-center mt-4 mb-8">
                     <div className="w-14 h-14 bg-gradient-to-b from-[#00FF88] to-[#00D4FF] rounded-lg flex items-center justify-center">
                         <HiOutlineLightningBolt className="text-3xl text-black font-bold" />
                     </div>
                 </div>
 
-                {/* Navigation */}
+                
                 <ul className="menu text-base font-medium space-y-4">
                     {NavigationOptions.map((options) => (
                         <li key={options.name}>
