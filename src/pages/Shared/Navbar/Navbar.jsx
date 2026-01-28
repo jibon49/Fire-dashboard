@@ -24,7 +24,7 @@ const Navbar = ({ toggleSidebar }) => {
       </div>
       <div
         tabIndex={0}
-        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 text-black shadow">
         <div className="card-body">
           <span className="text-lg font-bold">8 Notificaitons</span>
           <div className="card-actions">
@@ -43,7 +43,7 @@ const Navbar = ({ toggleSidebar }) => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
           <a className="justify-between">
             Profile
