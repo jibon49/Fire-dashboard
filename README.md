@@ -44,4 +44,10 @@ npm run preview
 - Recharts
 - React icons
 
+### Live link of this project
+
+```bash
+https://fire-dashboard-wine.vercel.app/
+```
+
 
