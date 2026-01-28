@@ -1,13 +1,25 @@
+import { useState } from "react";
+import ProfileInfo from "./ProfileInfo";
+import EditProfile from "./EditProfile";
 
 
 const ProfileSetting = () => {
 
-    const userData = {
-        name: "John Doe",
+    const [editActive, setEditActive] = useState(true);
+
+    const [userData, setUserData] = useState({
+        name: "Jane D.",
         email: "jane@gmail.com",
         storeName: "Tech Ubreakfix Store",
         location: "123 Main Street, New York, NY 10001"
-    }
+    });
+
+    const handleUpdateProfile = (updatedData) => {
+        setUserData(updatedData);
+        setEditActive(true); // Switch back to view mode after saving
+    };
+
+
 
     return (
         <div className="">
@@ -19,41 +31,11 @@ const ProfileSetting = () => {
                     </div>
                 </div>
                 <div>
-                    <button className="bg-[#152252] py-1 px-4 text-white shadow-[inset_0_0_10px_rgba(255,255,255,0.35)]  border border-white shadow-white shadow-outer text-xs text-medium rounded-xl drop-shadow-2xl drop-shadow-blue-400">Edit Profile</button>
+                    <button onClick={() => setEditActive(!editActive)} className="bg-[#152252] py-1 px-4 text-white shadow-[inset_0_0_10px_rgba(255,255,255,0.35)]  border border-white shadow-white shadow-outer text-xs text-medium rounded-xl drop-shadow-2xl drop-shadow-blue-400 hover:cursor-pointer">Edit Profile</button>
                 </div>
             </div>
             <div>
-                <div className="flex items-center  mt-10 mb-4">
-                    <div className="overflow-x-auto">
-                        <table className="table">
-                            {/* head */}
-                            <thead>
-                            </thead>
-                            <tbody className="text-xl">
-                                <tr className="">
-                                    <td className=" border-b border-border-color">Name:</td>
-                                    <td className=" border-b border-border-color">{userData.name}</td>
-                                </tr>
-
-                                <tr className="border-b border-border-color">
-                                    <td className=" border-b border-border-color">Email:</td>
-                                    <td className=" border-b border-border-color">{userData.email}</td>
-                                </tr>
-
-                                <tr className="border-b border-border-color">
-                                    <td className=" border-b border-border-color">Store Name:</td>
-                                    <td className=" border-b border-border-color">{userData.storeName}</td>
-                                </tr>
-
-                                <tr className="border-b border-border-color">
-                                    <td className="">Location:</td>
-                                    <td className="">{userData.location}</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-                </div>
+                {editActive ? <ProfileInfo userData={userData}></ProfileInfo>: <EditProfile userData={userData} onUpdateProfile={handleUpdateProfile}></EditProfile>}
             </div>
         </div>
     )
