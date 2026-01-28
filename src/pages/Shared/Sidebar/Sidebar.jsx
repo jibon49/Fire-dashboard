@@ -1,5 +1,4 @@
 
-import { Link } from 'react-router-dom'
 import { HiOutlineLightningBolt } from "react-icons/hi";
 import { RiHome4Fill } from "react-icons/ri";
 import { IoCallOutline } from "react-icons/io5";
@@ -71,12 +70,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
                             </NavLink>
                         </li>
                     ))}
-                </ul>
-
-
-
-
-                
+                </ul>           
                 <div className="absolute bottom-4 left-4">
                     <button className="group flex items-center gap-3 p-3 text-black rounded-full
             hover:border hover:border-black transition-all duration-200">

@@ -1,6 +1,18 @@
-
+import { useLocation } from 'react-router-dom';
 
 const Navbar = ({ toggleSidebar }) => {
+  const location = useLocation();
+
+  const getPageTitle = (pathname) => {
+    const pageMap = {
+      '/': 'Dashboard Overview',
+      '/call-logs': 'Call Logs and History',
+      '/appointments': 'Appointments',
+      '/settings': 'Settings'
+    };
+    return pageMap[pathname] || 'Dashboard Overview';
+  };
+
   return (
     <div className="navbar bg-site-primary shadow-sm text-white h-16 md:h-24 px-2 md:px-4">
 
@@ -12,7 +24,7 @@ const Navbar = ({ toggleSidebar }) => {
     </button>
   </div>
   <div className="flex-1">
-    <a className="text-lg md:text-2xl lg:text-3xl">Dashboard Overview</a>
+    <a className="text-lg md:text-2xl lg:text-3xl">{getPageTitle(location.pathname)}</a>
   </div>
   <div className="flex-none gap-1 md:gap-2">
     <div className="dropdown dropdown-end">
